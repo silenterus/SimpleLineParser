@@ -1,2 +1,2 @@
-# SimpleLineParser
-Simple Parsing Library 
+# 🏗️ SimpleLineParser 🏗️
+Simple Parser for SqlAutoGen
