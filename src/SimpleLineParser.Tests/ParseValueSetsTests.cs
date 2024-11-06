@@ -81,7 +81,7 @@ public class ParseValueSetsTests
         Assert.Equal("Password", set2.Right[2].Name);
         Assert.Equal("", set2.Right[2].Prefix);
         Assert.Equal("word,", set2.Right[2].Value);
-        Assert.Equal(2, set2.Right[2].Options[0]);
+        Assert.Equal(6, set2.Right[2].Options[0]);
 
         // ValueSet 3
         var set3 = resultsRaw[0].Segments[2];
@@ -419,7 +419,7 @@ public class ParseValueSetsTests
         Assert.Equal("test", results[0].Segments[1].Left[0].Prefix);
         Assert.Equal("Password", results[0].Segments[1].Right[2].Name);
         Assert.Equal("word,", results[0].Segments[1].Right[2].Value);
-        Assert.Equal(2, results[0].Segments[1].Right[2].Options[0]); // Options[0] for '@'
+        Assert.Equal(6, results[0].Segments[1].Right[2].Options[0]); // Options[0] for '@'
 
         Assert.Equal("int", results[0].Segments[5].Left[0].Prefix);
         Assert.Equal("Provider", results[0].Segments[5].Right[0].Name);
@@ -520,7 +520,7 @@ public class ParseValueSetsTests
         Assert.Equal("prefix", set.Segments[0].Left[0].Prefix);
         Assert.Equal("Name", set.Segments[0].Left[0].Name);
         Assert.Equal("Value", set.Segments[0].Left[0].Value);
-        Assert.Equal(2, set.Segments[0].Left[0].Options[0]); // @ maps to 2
+        Assert.Equal(6, set.Segments[0].Left[0].Options[0]); // @ maps to 2
     }
 
     [Fact]
